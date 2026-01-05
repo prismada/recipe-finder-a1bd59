@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgentScaffold</title>
+  <link id="favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23334155'/></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="agentName">AgentScaffold</h1>
+      <p id="agentTagline">Describe your agent, we'll build it</p>
+    </header>
+
+    <form class="search-form" id="form">
+      <textarea id="input" placeholder="Describe the agent you want to create..." required rows="3"></textarea>
+      <button type="submit" id="btn">Create</button>
+    </form>
+
+    <div class="status" id="status">
+      <div class="status-dot"></div>
+      <span class="status-text" id="statusText">Creating agent...</span>
+      <span class="status-time" id="statusTime">0:00</span>
+    </div>
+
+    <div class="results" id="results">
+      <div class="results-card">
+        <div class="results-content" id="content"></div>
+      </div>
+      <div class="results-meta">
+        <span id="tokens">0</span> tokens · $<span id="cost">0.00</span> · <span id="duration"></span>
+      </div>
+    </div>
+
+    <div class="error" id="error"></div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

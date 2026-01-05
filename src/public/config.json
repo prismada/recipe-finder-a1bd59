@@ -1,0 +1,8 @@
+{
+  "name": "Recipe Finder",
+  "tagline": "Find and format recipes from AllRecipes",
+  "example": "Find a chocolate cake recipe from AllRecipes",
+  "buttonText": "Search",
+  "workingText": "Searching...",
+  "statusText": "Recipe Finder is working..."
+}
